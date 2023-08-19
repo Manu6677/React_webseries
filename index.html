@@ -8,24 +8,7 @@
   </head>
   <body>
     <!-- Remember what ever is only inside root get replaced by react element(object) -->
-    <div id="root"></div>
-    <!-- All these is a way to write a java script code 
-            <script>
-          /* Here first created h1 tag and give inside the string*/
-
-          const heading = document.createElement("h1");
-          heading.innerHTML = "Hello world from javaScript";
-
-          /*After that we appended it into the root id as a child else it wont work*/
-
-          const root = document.getElementById("root");
-          root.appendChild(heading);
-        </script> -->
-
-    <!-- Now to include the react via cdn links in our project 
-              -> I have included two files of react because there is one core react file and other one is Dom file
-                 -> why can't be one file because React not only run on browser it run on mobile too so this file has a different functions and act as a bridge between React and browser
-        -->
+    <div id="root">Not Render</div>
 
     <script type="module" src="./App.js"></script>
   </body>
