@@ -18,3 +18,20 @@
 - Diagnostic (Beautiful Error Handling)
 - Tree Shaking Algo
 - Different Dev and prod bundles (Prod build need more optimization hence took more time than Dev build)
+
+# App Structure
+
+--Header
+-Logo
+-Nav Item
+-Cart
+
+--Body
+-search bar
+--Restaurant container
+-Restaurant card
+-Img, -Name, -Rating, -cusines
+
+--Footer
+-Links  
+ -copyRght
