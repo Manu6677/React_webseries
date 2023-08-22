@@ -1,0 +1,45 @@
+import "./styles.css";
+import { useState } from "react";
+const countries = [
+  { name: "India", value: "IN", cities: ["Delhi", "Mumbai"] },
+  { name: "Pak", value: "PK", cities: ["Lahore", "Karachi"] },
+  { name: "Bangladesh", value: "BG", cities: ["Dhaka", "Chittagong"] }
+];
+
+export default function App() {
+  // state to store the value of country
+  const [countryval, setCountryval] = useState([0]);
+  console.log("outside", countryval);
+  console.log("outside test", countries[countryval]);
+
+  return (
+    // 1st drop down
+    <div className="App">
+      <select
+        onChange={(e) => {
+          console.log("onchange", e.target.value);
+          setCountryval([e.target.value]);
+        }}
+      >
+        {countries.map((item, index) => {
+          return <option value={index}>{item.name}</option>;
+        })}
+      </select>
+
+      {/* 2nd drop down  */}
+      <select>
+        {countries[countryval] &&
+          countries[countryval].cities.map((item, index) => {
+            return <option>{item}</option>;
+          })}
+      </select>
+    </div>
+  );
+}
+
+// {name: "Pak", value: "PK", cities: Array(2)}
+// name: "Pak"
+// value: "PK"
+// cities: Array(2)
+// 0: "Lahore"
+// 1: "Karachi"

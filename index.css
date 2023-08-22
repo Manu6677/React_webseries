@@ -44,3 +44,10 @@
   cursor: pointer;
   border: 1px solid black;
 }
+
+.search-btn {
+  margin: 7px;
+}
+.btn {
+  cursor: pointer;
+}
