@@ -35,3 +35,13 @@
 --Footer
 -Links  
  -copyRght
+
+# Router
+
+-Client side routing (There is only one page and component got changed here)
+-Server side routing (refresh the whole page)
+
+# In React, react-router-dom
+
+-CreateBrowserRouter do all the configurations and provide it to the Router provider
+-Router provider renders it in page

@@ -1,0 +1,8 @@
+Lec - 11:
+-> learn about HOC = takes a component and return it will some enhancement called HOC
+-> Controlled & Uncontrolledcomp
+-> Lifting the state up = By building the Accordian => Read doc of React to Lift the state up
+-> Context
+
+way to do a lazy loading
+const About = lazy(() => import("path"))
